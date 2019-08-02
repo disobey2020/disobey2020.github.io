@@ -47,16 +47,14 @@
     </span>
   </h1>
   <p>This page is meant to gather need-to-know information about the upcoming conference. Like many things in life, it gets better by sharing. Feel free to submit a pull request if you would like to add things here.</p>
-  <script
-			  src="https://code.jquery.com/jquery-3.4.1.min.js"
-			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-			  crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script>
   // Wrap every letter in a span
-  $('.ml9 .letters').each(function(){
-    $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-  });
+  let letterContainers = document.querySelectorAll('.ml9 .letters');
+  for (let i = 0; i < letterContainers.length; i++) {
+    const letters = letterContainers[i];
+    letters.innerHTML = letters.innerText.replace(/([^\x00-\x80]|\w)/g, '<span class="letter">$&</span>');
+  }
 
   anime.timeline({loop: true})
     .add({
