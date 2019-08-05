@@ -43,7 +43,21 @@
 |  (_.\.' /  |   | \    `-'  | \ `"/  \  ) / | (_{;}_) | \  `-'    /|   `-'  /              ( ' )(__..--.||  `-'`"` || ( ' )(__..--.||  `-'`"` || 
 |       .'   |   |  \       /   '. \_/``".'  |  (_,_)  /  \       /  \      /              (_{;}_)      |\'._______.'/(_{;}_)      |\'._______.'/ 
 '-----'`     '---'   `-...-'      '-----'    /_______.'    `'-..-'    `-..-'                (_,_)-------' '._______.'  (_,_)-------' '._______.'  
-    </pre>
+    </pre>                                                                                                                                          
+  <h1 class="ml9">
+    <span class="text-wrapper">
+      <span class="letters">Perhaps you could try harder...</span>
+    </span>
+  </h1>
+  <p>This page is meant to gather need-to-know information about the upcoming conference. Like many things in life, it gets better by sharing. Feel free to submit a pull request if you would like to add things here.</p>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script>
+  // Wrap every letter in a span
+  let letterContainers = document.querySelectorAll('.ml9 .letters');
+  for (let i = 0; i < letterContainers.length; i++) {
+    const letters = letterContainers[i];
+    letters.innerHTML = letters.innerText.replace(/([^\x00-\x80]|\w)/g, '<span class="letter">$&</span>');
+  }
 
 	<h1 class="ml9">
 		<span class="text-wrapper">
