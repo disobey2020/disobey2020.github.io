@@ -53,7 +53,7 @@
   let letterContainers = document.querySelectorAll('.ml9 .letters');
   for (let i = 0; i < letterContainers.length; i++) {
     const letters = letterContainers[i];
-    letters.innerHTML = letters.innerText.replace(/([^\x00-\x80]|\w)/g, '<span class="letter">$&</span>');
+    letters.innerHTML = letters.innerText.replace(/([^\x00-\x80]|\w|\.)/g, '<span class="letter">$&</span>');
   }
 
   anime.timeline({loop: true})
