@@ -1,0 +1,3 @@
+Contact: disobey2020@io.fi
+Preferred-Languages: en
+Canonical: https://disobey2020.github.io/.well_known/security.txt
