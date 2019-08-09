@@ -48,10 +48,21 @@
     color: #ffaa00;
   }
   .flower5 {
-    color: #ff0000;
+    color: #502b2b;
+    animation: coolEffect 10s;
   }
 
-
+  @keyframes coolEffect {
+    0% {
+      color: #ff3c3c;
+    }
+    80% {
+      color: black;
+    }
+    100% {
+      color: #502b2b;
+    }
+  }
   .happyme {
 	  display: inline-block;
 	  transition: transform 1337ms ease-in-out;
