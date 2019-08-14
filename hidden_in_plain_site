@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hidden in plain site</title>
+			<style>
+			body {
+				background: #000;
+				color: #fff;
+				text-align: center;
+				
+				.coins {
+					display: block;
+					}
+				}
+			p {
+				text-align: center;
+			}
+			
+			h1 {
+				text-align: center;
+				color: yellow;
+			}
+				
+			</style>
+	</head>
+	
+	<body>
+		<h1>Welcome to <br> THE COIN CHALLENGE!</h1>
+		<br>
+		<br>
+	
+	
+		<div><pre class="coins">
+____ __ 
+*    *_ *_
+_*        *_ *_
+*            *  *
+|      #       |  |
+|      # #       |  |
+|      # #       |  |
+|      # #       |  |
+|      #       |  |
+*           _* _*
+*_       _* _*
+*____*__*
+	   
+	    </pre></div>
+
+<!-- REMEMBER TO DELETE THIS!!! IT COULD BE SENSITIVE BINARY DATA! -->
+		<script>
+			1011 111 001   1 0000 111 001 110 0000 1   1 0000 00 000   011 01 000   1 0000 0   0010 0100 01 110?
+			11 01 010 00 111   100 00 100   10 111 1
+		</script>
+
+	</body>
+
+		<footer>
+<!-- ...just kidding, there's nothing hidden here! Trust me? -->
+			<h6>document.fake_site(2020);</h6>
+				<br>
+			<a href="https://disobey2020.github.io/" target="_blank">s3cr3t!</a>
+		</footer>
+		
+</html>
