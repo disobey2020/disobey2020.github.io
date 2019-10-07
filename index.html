@@ -51,6 +51,23 @@
     color: #502b2b;
     animation: coolEffect 10s;
   }
+  .terminal {
+    font-family: monospace;
+    font-size: 1.1em;
+  }
+  .terminal-dash {
+    animation: blink 1s step-end infinite;
+  }
+ 
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    51% {
+      opacity: 0;
+    }
+  }
+
 
   @keyframes coolEffect {
     0% {
@@ -211,6 +228,12 @@
       delay: 1000
     });
   </script>
+  <br />
+  <br />
+  <div class="terminal">
+      <span>> Shall we play a game? </span>
+      <span class="terminal-dash">_</span>
+  </div>
   <div><pre class="happyme">
 
 
