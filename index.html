@@ -51,6 +51,10 @@
     color: #502b2b;
     animation: coolEffect 10s;
   }
+  .wink {
+    color: #ccc;
+    animation: winkEffect 20s infinite;
+  }
 
   @keyframes coolEffect {
     0% {
@@ -63,6 +67,22 @@
       color: #502b2b;
     }
   }
+
+  @keyframes winkEffect {
+    0% {
+      color: #ccc;
+    }
+    33% {
+      color: #ccc;
+    }
+    35% {
+      color: black;
+    }
+    37% {
+      color: #ccc;
+    }
+  }
+
   .happyme {
 	  display: inline-block;
 	  transition: transform 1337ms ease-in-out;
@@ -230,10 +250,10 @@ MMMs   mMMN                           .MMMy   sMMM
 NMMs   -ss-                            /ss.   sMMN
 hMMm                                          mMMh
 :MMM/                                        /MMM:
- hMMN.           ``                         .NMMh 
- `mMMm.        `hMMm.   .hmmmmmmmmm+       .mMMm` 
-  .mMMN:       `mMMN-   -mMMMMMMMMMs      :NMMm.  
-   `hMMMy`       ..       ````````      `yMMMh`   
+ hMMN.           <span class="wink">``</span>                         .NMMh 
+ `mMMm.        <span class="wink">`hMMm.</span>   .hmmmmmmmmm+       .mMMm` 
+  .mMMN:       <span class="wink">`mMMN-</span>   -mMMMMMMMMMs      :NMMm.  
+   `hMMMy`       <span class="wink">..</span>       ````````      `yMMMh`   
      /NMMMs.                          .sMMMN/     
       `+NMMMd+.                    .+dMMMN+`      
          /hMMMMmy+:.          .:+ymMMMMh/         
