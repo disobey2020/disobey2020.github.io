@@ -283,6 +283,9 @@ hMMm                                          mMMh
     (function(){function m(a){var b=a.innerHTML;a.innerHTML="";for(var d=[],g=0;g<b.length;g++){var e=document.createElement("span");e.className="l";e.innerHTML=b.charAt(g);" "==b.charAt(g)&&(e.innerHTML="&nbsp;");a.appendChild(e);d.push(e)}f.push(d)}function n(a,b){setTimeout(function(){a[b].className="l in"},340+80*b)}function p(a,b){setTimeout(function(){a[b].className="l out"},80*b)}function l(){for(var a=f[c],b=c==h.length-1?f[0]:f[c+1],d=0;d<a.length;d++)p(a,d);for(a=0;a<b.length;a++)b[a].className=
     "l behind",b[0].parentElement.style.opacity=1,n(b,a);c=c==f.length-1?0:c+1}var c=0,h=document.getElementsByClassName("gh-row"),f=[];h[c].style.opacity=1;for(var k=0;k<h.length;k++)m(h[k]);l();setInterval(l,4E3)})();
   </script>
+  <script>
+    console.log('Hello world!')
+  </script>
   </footer>
 
   </body>
