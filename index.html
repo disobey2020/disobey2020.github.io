@@ -49,18 +49,19 @@
   }
   .flower5 {
     color: #502b2b;
-    animation: coolEffect 10s;
+    animation-name: coolEffect;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
   }
 
   @keyframes coolEffect {
     0% {
       color: #ff3c3c;
     }
-    80% {
-      color: black;
-    }
     100% {
-      color: #502b2b;
+      color: #330c0c;
     }
   }
   .happyme {
