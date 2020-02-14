@@ -1,123 +1,86 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
   <title>Disobey 2020</title>
   <style>
-    body {
-      background: #000;
-      color: #ccc;
-      text-align: center;
-    }
+  body {
+    background: #000;
+    color: #ccc;
+    text-align: center;
+  }
+  a {
+    color: #f1f1f1;
+    text-decoration: underline;
+  }
 
-    a {
-      color: #f1f1f1;
-      text-decoration: underline;
-    }
+  .ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+  }
 
-    .ml9 {
-      position: relative;
-      font-weight: 200;
-      font-size: 4em;
-    }
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
 
-    .ml9 .text-wrapper {
-      position: relative;
-      display: inline-block;
-      padding-top: 0.2em;
-      padding-right: 0.05em;
-      padding-bottom: 0.1em;
-      overflow: hidden;
-    }
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+    font-style: italic;
+  }
 
-    .ml9 .letter {
-      transform-origin: 50% 100%;
-      display: inline-block;
-      line-height: 1em;
-      font-style: italic;
-    }
+  .flower1 {
+    color: #ff00ff;
+  }
+  .flower2 {
+    color: #00ff00;
+  }
+  .flower3 {
+    color: #00ffff;
+  }
+  .flower4 {
+    color: #ffaa00;
+  }
+  .flower5 {
+    color: #502b2b;
+    animation: coolEffect 10s;
+  }
 
-    .flower1 {
-      color: #ff00ff;
+  @keyframes coolEffect {
+    0% {
+      color: #ff3c3c;
     }
-
-    .flower2 {
-      color: #00ff00;
+    80% {
+      color: black;
     }
-
-    .flower3 {
-      color: #00ffff;
-    }
-
-    .flower4 {
-      color: #ffaa00;
-    }
-
-    .flower5 {
+    100% {
       color: #502b2b;
-      animation: coolEffect 10s;
     }
-
-    @keyframes coolEffect {
-      0% {
-        color: #ff3c3c;
-      }
-
-      80% {
-        color: black;
-      }
-
-      100% {
-        color: #502b2b;
-      }
-    }
-
-    .happyme {
-      display: inline-block;
-      transition: transform 1337ms ease-in-out;
-    }
-
-    .happyme:hover {
-      transform: rotateZ(360deg);
-    }
-
-    .gh-row {
-      position: absolute;
-    }
-
-    .good-hackers .l {
-      display: inline-block;
-      transform: translateZ(25px);
-      transform-origin: 50% 50% 5px;
-    }
-
-    .good-hackers .l.out {
-      transform: rotateX(90deg);
-      transition: transform 0.32s;
-    }
-
-    .good-hackers .l.behind {
-      transform: rotateX(-90deg);
-    }
-
-    .good-hackers .l.in {
-      transform: rotateX(0deg);
-      transition: transform 0.38s;
-    }
-
-    .harderer {
-      color: red;
-    }
-
-    .harderer .l {
-      transform: rotateX(-90deg);
-    }
+  }
+  .happyme {
+	  display: inline-block;
+	  transition: transform 1337ms ease-in-out;
+  }
+  .happyme:hover {
+	  transform: rotateZ(360deg);
+  }
+  .gh-row { position: absolute; }
+  .good-hackers .l { display: inline-block; transform: translateZ(25px); transform-origin: 50% 50% 5px; }
+  .good-hackers .l.out { transform: rotateX(90deg); transition: transform 0.32s; }
+  .good-hackers .l.behind { transform: rotateX(-90deg); }
+  .good-hackers .l.in { transform: rotateX(0deg); transition: transform 0.38s; }
+  .harderer { color: red; }
+  .harderer .l { transform: rotateX(-90deg); }
   </style>
-</head>
-
-<body>
-  <br /><br />
-  <pre>
+  </head>
+  <body>
+    <br /><br /><pre>
  ______     <span class="flower2">.-./`)</span>    .-'''-.     ,-----.     _______       .-''-.     ____     __             .`````-.   .-```````-.     .`````-.   .-```````-.  
 |    <span class="flower1">_</span> `''. <span class="flower2">\ .-.')</span>  / <span class="flower3">_</span>     \  .'  <span class="flower4">.-,</span>  '.  \  ____  \   .'<span class="flower3">_ _</span>   \    \   \   /  /           /   ,-.  \ / ,```````. \   /   ,-.  \ / ,```````. \ 
 | <span class="flower1">_ | ) _</span>  \<span class="flower2">/ `-' \</span> <span class="flower3">(`' )</span>/`--' / <span class="flower4">,-.|  \ _</span> \ | |    \ |  / <span class="flower3">( ` )</span>   '    \  <span class="flower3">_</span>. /  '           (___/  |   ||/ <span class="flower1">.-./ )</span>  \|  (___/  |   ||/ <span class="flower1">.-./ )</span>  \| 
@@ -128,7 +91,7 @@
 |       .'   |   |  \       /   '. <span class="flower4">\_/``"</span>.'  |  <span class="flower5">(_,_)</span>  /  \       /  \      /              <span class="flower2">(_{;}_)</span>      |\'._______.'/<span class="flower2">(_{;}_)</span>      |\'._______.'/ 
 '-----'`     '---'   `-...-'      '-----'    /_______.'    `'-..-'    `-..-'                <span class="flower2">(_,_)</span>-------' '._______.'  <span class="flower2">(_,_)</span>-------' '._______.'  
     </pre>
-
+                                                                                                                                                  
   <h1 class="ml9">
     <span class="text-wrapper">
       <span class="letters">Maybe you could try harderer......</span>
@@ -149,8 +112,7 @@
   </h1>
 
   <noscript>
-    <h2>We get your love for opsec and tinfoil hats (and Tails!), but JavaScript makes us look super! Please consider
-      switching JS on!</h2>
+    <h2>We get your love for opsec and tinfoil hats (and Tails!), but JavaScript makes us look super! Please consider switching JS on!</h2>
   </noscript>
 
   <script>
@@ -162,96 +124,95 @@
                 QWdJQ0FnSUh4OExTMHRMWGNnZkFvZ0lDQWdJQ0FnSUNBZ0lDQWdJQ0FnZkh3Z0lD
                 QWdJSHg4Q2c9PScpKQ==`));
   </script>
+ 
+ <script>
+     var text = "This page is meant to gather need-to-know information about the upcoming conference. Like many things in life, it gets better by sharing. Feel free to submit a pull request if you would like to add things here." // YOUR TEXT
+ var speed = 80 
 
-  <script>
-    var text = "This page is meant to gather need-to-know information about the upcoming conference. Like many things in life, it gets better by sharing. Feel free to submit a pull request if you would like to add things here." // YOUR TEXT
-    var speed = 80
+ if (document.all || document.getElementById) {
+     document.write('<span id="highlight">' + text + '</span>')
+     var storetext = document.getElementById ? document.getElementById("highlight") : document.all.highlight
+ } else
+     document.write(text)
+ var hex = new Array("00", "14", "28", "3C", "50", "64", "78", "8C", "A0", "B4", "C8", "DC", "F0")
+ var r = 1
+ var g = 1
+ var b = 1
+ var seq = 1
 
-    if (document.all || document.getElementById) {
-      document.write('<span id="highlight">' + text + '</span>')
-      var storetext = document.getElementById ? document.getElementById("highlight") : document.all.highlight
-    } else
-      document.write(text)
-    var hex = new Array("00", "14", "28", "3C", "50", "64", "78", "8C", "A0", "B4", "C8", "DC", "F0")
-    var r = 1
-    var g = 1
-    var b = 1
-    var seq = 1
+ function changetext() {
+     rainbow = "#" + hex[r] + hex[g] + hex[b]
+     storetext.style.color = rainbow
+ }
 
-    function changetext() {
-      rainbow = "#" + hex[r] + hex[g] + hex[b]
-      storetext.style.color = rainbow
-    }
+ function change() {
+     if (seq == 6) {
+         b--
+         if (b == 0)
+             seq = 1
+     }
+     if (seq == 5) {
+         r++
+         if (r == 12)
+             seq = 6
+     }
+     if (seq == 4) {
+         g--
+         if (g == 0)
+             seq = 5
+     }
+     if (seq == 3) {
+         b++
+         if (b == 12)
+             seq = 4
+     }
+     if (seq == 2) {
+         r--
+         if (r == 0)
+             seq = 3
+     }
+     if (seq == 1) {
+         g++
+         if (g == 12)
+             seq = 2
+     }
+     changetext()
+ }
 
-    function change() {
-      if (seq == 6) {
-        b--
-        if (b == 0)
-          seq = 1
-      }
-      if (seq == 5) {
-        r++
-        if (r == 12)
-          seq = 6
-      }
-      if (seq == 4) {
-        g--
-        if (g == 0)
-          seq = 5
-      }
-      if (seq == 3) {
-        b++
-        if (b == 12)
-          seq = 4
-      }
-      if (seq == 2) {
-        r--
-        if (r == 0)
-          seq = 3
-      }
-      if (seq == 1) {
-        g++
-        if (g == 12)
-          seq = 2
-      }
-      changetext()
-    }
-
-    function starteffect() {
-      if (document.all || document.getElementById)
-        flash = setInterval("change()", speed)
-    }
-    starteffect() </script>
-
-
+ function starteffect() {
+     if (document.all || document.getElementById)
+         flash = setInterval("change()", speed)
+ }
+ starteffect() </script> 
+  
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script>
-    // Wrap every letter in a span
-    let letterContainers = document.querySelectorAll('.ml9 .letters');
-    for (let i = 0; i < letterContainers.length; i++) {
-      const letters = letterContainers[i];
-      letters.innerHTML = letters.innerText.replace(/([^\x00-\x80]|\w|\.)/g, '<span class="letter">$&</span>');
-    }
+  // Wrap every letter in a span
+  let letterContainers = document.querySelectorAll('.ml9 .letters');
+  for (let i = 0; i < letterContainers.length; i++) {
+    const letters = letterContainers[i];
+    letters.innerHTML = letters.innerText.replace(/([^\x00-\x80]|\w|\.)/g, '<span class="letter">$&</span>');
+  }
 
-    anime.timeline({ loop: true })
-      .add({
-        targets: '.ml9 .letter',
-        scale: [0, 1],
-        duration: 1500,
-        elasticity: 600,
-        delay: function (el, i) {
-          return 45 * (i + 1)
-        }
-      }).add({
-        targets: '.ml9',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml9 .letter',
+      scale: [0, 1],
+      duration: 1500,
+      elasticity: 600,
+      delay: function(el, i) {
+        return 45 * (i+1)
+      }
+    }).add({
+      targets: '.ml9',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
   </script>
-  <div>
-    <pre class="happyme">
+  <div><pre class="happyme">
 
 
                `:+shdNNMMMMNNdhs+:`               
@@ -281,9 +242,8 @@ hMMm                                          mMMh
                `:+shdNNMMMMNNdhs+:`               
 
 
-  </pre>
-  </div>
-  <!--
+  </pre></div>
+<!--
 		    /|      __  
 		   / |   ,-~ /  
 		  Y :|  //  /    
@@ -313,23 +273,18 @@ hMMm                                          mMMh
     console.log("¯\_(ツ)_/¯")	
   </script>
   <footer>
-    <a href="https://disobey.fi/2020/" target="_blank">disobey!</a>
-    <hr />
-    <p class="good-hackers">Good hackers&nbsp;
-      <span class="gh-row">work hard.</span>
-      <span class="gh-row">play harder.</span>
-      <span class="gh-row harderer">try harderer!</span>
-    </p>
-    <script type="text/javascript">
-        (function () {
-          function m(a) { var b = a.innerHTML; a.innerHTML = ""; for (var d = [], g = 0; g < b.length; g++) { var e = document.createElement("span"); e.className = "l"; e.innerHTML = b.charAt(g); " " == b.charAt(g) && (e.innerHTML = "&nbsp;"); a.appendChild(e); d.push(e) } f.push(d) } function n(a, b) { setTimeout(function () { a[b].className = "l in" }, 340 + 80 * b) } function p(a, b) { setTimeout(function () { a[b].className = "l out" }, 80 * b) } function l() {
-            for (var a = f[c], b = c == h.length - 1 ? f[0] : f[c + 1], d = 0; d < a.length; d++)p(a, d); for (a = 0; a < b.length; a++)b[a].className =
-              "l behind", b[0].parentElement.style.opacity = 1, n(b, a); c = c == f.length - 1 ? 0 : c + 1
-          } var c = 0, h = document.getElementsByClassName("gh-row"), f = []; h[c].style.opacity = 1; for (var k = 0; k < h.length; k++)m(h[k]); l(); setInterval(l, 4E3)
-        })();
-    </script>
+  <a href="https://disobey.fi/2020/" target="_blank">disobey!</a>
+  <hr />
+  <p class="good-hackers">Good hackers&nbsp;
+    <span class="gh-row">work hard.</span>
+    <span class="gh-row">play harder.</span>
+    <span class="gh-row harderer">try harderer!</span>
+  </p>
+  <script type="text/javascript">
+    (function(){function m(a){var b=a.innerHTML;a.innerHTML="";for(var d=[],g=0;g<b.length;g++){var e=document.createElement("span");e.className="l";e.innerHTML=b.charAt(g);" "==b.charAt(g)&&(e.innerHTML="&nbsp;");a.appendChild(e);d.push(e)}f.push(d)}function n(a,b){setTimeout(function(){a[b].className="l in"},340+80*b)}function p(a,b){setTimeout(function(){a[b].className="l out"},80*b)}function l(){for(var a=f[c],b=c==h.length-1?f[0]:f[c+1],d=0;d<a.length;d++)p(a,d);for(a=0;a<b.length;a++)b[a].className=
+    "l behind",b[0].parentElement.style.opacity=1,n(b,a);c=c==f.length-1?0:c+1}var c=0,h=document.getElementsByClassName("gh-row"),f=[];h[c].style.opacity=1;for(var k=0;k<h.length;k++)m(h[k]);l();setInterval(l,4E3)})();
+  </script>
   </footer>
 
-</body>
-
+  </body>
 </html>
